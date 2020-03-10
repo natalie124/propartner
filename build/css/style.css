@@ -1,0 +1,130 @@
+@charset "UTF-8";
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/*Шрифты*/
+/*Цвета*/
+/* GTEestiProText-Regular */
+@font-face {
+  font-family: "GTEestiProText";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GTEestiProText-Regular.eot");
+  /* IE9 Compat Modes */
+  src: local("GTEestiProText"), local("GTEestiProText-Regular"), url("../fonts/GTEestiProText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GTEestiProText-Regular.woff2") format("woff2"), url("../fonts/GTEestiProText-Regular.woff") format("woff"), url("../fonts/GTEestiProText-Regular.ttf") format("truetype"), url("../fonts/GTEestiProText-Regular.svg#GTEestiProText-Regular") format("svg");
+  /* Legacy iOS */
+}
+
+/* GTEestiProText-Bold */
+@font-face {
+  font-family: "GTEestiProText";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/GTEestiProText-Bold.eot");
+  /* IE9 Compat Modes */
+  src: local("GTEestiProText"), local("GTEestiProText-Bold"), url("../fonts/GTEestiProText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GTEestiProText-Bold.woff2") format("woff2"), url("../fonts/GTEestiProText-Bold.woff") format("woff"), url("../fonts/GTEestiProText-Bold.ttf") format("truetype"), url("../fonts/GTEestiProText-Bold.svg#GTEestiProText-Bold") format("svg");
+  /* Legacy iOS */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: "GTEestiProText", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #272727;
+}
+
+img {
+  display: block;
+  vertical-align: top;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.header {
+  width: 100%;
+}

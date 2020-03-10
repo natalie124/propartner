@@ -14,13 +14,38 @@
 <body>
   <header class="header">
     <div class="header__wrapper container">
-      <nav class="header__nav"><a class="header__logo"><svg width="256" height="26" aria-hidden="true">
+      <nav class="header__nav"><a class="header__logo" href="#"><svg width="256" height="26" aria-hidden="true">
             <use xlink:href="img/sprite.svg#logo"></use>
-          </svg></a></nav>
+          </svg></a><a class="header__location menu-link" href="#"><svg width="14" height="18" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>Россия</a>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__menu-link menu-link" href="#">Товары</a></li>
+          <li class="header__menu-item"><a class="header__menu-link menu-link" href="#">Компания</a></li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <h1 class="promo__title">Каталог товаров и услуг в России</h1>
+        <p class="promo__text">После бесплатной регистрации вы получите возможность</p>
+        <ul class="promo__list">
+          <li class="promo__item">Создать страницу о Вашей компании</li>
+          <li class="promo__item">Опубликовать товары в каталоге</li>
+          <li class="promo__item">Находить новых клиентов</li>
+        </ul>
+        <section class="registration">
+          <h2 class="registration__title">Зарегистрироваться</h2>
+          <form action="#" method="post">
+            <div class="input-item"><label for="email">e-mail<span>*</span></label><input type="email" id="email" required></div>
+            <div class="input-item"><label for="password">Пароль<span>*</span></label><input type="password" id="password" required></div>
+            <div class="input-item"><label for="phone">Телефон</label><input type="text" id="phone"></div>
+            <div class="input-check"><input type="checkbox" id="consent" name="consent" tabindex="-1" required><label for="consent">Я согласен с пользовательским соглашением и публичной офертой</label></div><button class="button" type="submit">Зарегистрироваться</button>
+          </form>
+        </section>
+      </section>
     </div>
   </header>
   <div class="container">
-    <h1>Продавай вместе с Propartner</h1>
+    <h2>Продавай вместе с Propartner</h2>
   </div>
   <script src="js/vendor.min.js"></script>
 </body>

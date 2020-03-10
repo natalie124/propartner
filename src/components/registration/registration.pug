@@ -1,0 +1,17 @@
+section.registration
+  h2.registration__title Зарегистрироваться
+  form(action="#" method="post")
+    .input-item
+      label(for="email") e-mail<span>*</span>
+      input(type="email" id="email" required)
+    .input-item
+      label(for="password") Пароль<span>*</span>
+      input(type="password" id="password" required)
+    .input-item
+      label(for="phone") Телефон
+      input(type="text" id="phone")
+    .input-check
+      input(type="checkbox" id="consent" name="consent" tabindex="-1" required)
+      label(for="consent") Я согласен с пользовательским соглашением и публичной офертой
+
+    button.button(type="submit") Зарегистрироваться

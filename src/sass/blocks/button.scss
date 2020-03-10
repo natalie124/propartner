@@ -1,0 +1,35 @@
+.button {
+  position: relative;
+
+  @include font-main(18px, 1.2, 700, $white);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 17px 25px;
+
+  background-color: $blue;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    text-shadow: 0 -1px 1px #777777;
+
+    background-color: $orange;
+    background: radial-gradient(at top, rgba($orange, 0.7), $orange);
+    box-shadow: 0 0 0 60px rgba(0, 0, 0, 0) inset, 0.1em 0.1em 0.2em #800800;
+  }
+
+  &:active {
+    top: 2px;
+    left: 2px;
+
+    text-shadow: none;
+
+    background: #d96c2a;
+    box-shadow: 0 0 0 60px rgba(0, 0, 0, .05) inset;
+  }
+}

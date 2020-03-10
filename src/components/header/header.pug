@@ -1,5 +1,14 @@
 header.header
   .header__wrapper.container
     nav.header__nav
-      a.header__logo
+      a.header__logo(href="#")
         +svg("logo", 256, 26)
+      a.header__location.menu-link(href="#")
+        +svg("location", 14, 18)
+        | Россия
+      ul.header__menu
+        each item in headerMenuItems
+          li.header__menu-item
+            a.header__menu-link.menu-link(href="#") !{item}
+
+    include ../promo/promo

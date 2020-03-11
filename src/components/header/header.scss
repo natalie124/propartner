@@ -15,13 +15,14 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
-    padding: 50px 0;
+    padding: 56px 0 49px;
   }
 
   &__logo {
-    width: 256px;
-    height: 26px;
-    margin-right: 50px;
+    width: 308px;
+    height: 31px;
+    margin-right: 52px;
+    margin-top: 2px;
 
     svg {
       display: block;
@@ -30,17 +31,6 @@
       height: 100%;
 
       fill: $white;
-    }
-
-    &:hover,
-    &:focus {
-     opacity: 0.6;
-    }
-
-    &:active {
-      svg {
-        fill: $orange;
-      }
     }
   }
 

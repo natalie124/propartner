@@ -99,6 +99,11 @@ img {
   padding: 0 30px;
 }
 
+.container--big {
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 20px;
@@ -373,13 +378,14 @@ img {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 56px 0 49px;
 }
 
 .header__logo {
-  width: 256px;
-  height: 26px;
-  margin-right: 50px;
+  width: 308px;
+  height: 31px;
+  margin-right: 52px;
+  margin-top: 2px;
 }
 
 .header__logo svg {
@@ -387,14 +393,6 @@ img {
   width: 100%;
   height: 100%;
   fill: #ffffff;
-}
-
-.header__logo:hover, .header__logo:focus {
-  opacity: 0.6;
-}
-
-.header__logo:active svg {
-  fill: #ed7932;
 }
 
 .header__location {
@@ -444,9 +442,136 @@ img {
   color: #ffffff;
 }
 
+.footer {
+  width: 100%;
+  color: #ffffff;
+  background-color: #252525;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+}
+
+.footer__menu-item {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-family: "GTEestiProText", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.005em;
+}
+
+.footer__menu-item::after {
+  content: "|";
+  margin-left: 15px;
+}
+
+.footer__menu-item:last-child {
+  margin-right: 0;
+}
+
+.footer__menu-item:last-child::after {
+  display: none;
+}
+
+.footer__menu-link {
+  color: #ffffff;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  display: block;
+  width: 308px;
+  height: 31px;
+  margin-bottom: 30px;
+}
+
+.footer__logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #4091d1;
+}
+
+.footer__copyright {
+  max-width: 630px;
+  margin: 0 auto 50px;
+}
+
+.footer__copyright p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "GTEestiProText", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer__copyright p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__copyright p a:hover, .footer__copyright p a:focus {
+  text-decoration: underline;
+}
+
+.footer__copyright p a:active {
+  color: #ed7932;
+}
+
 .promo {
   position: relative;
-  padding-bottom: 70px;
+  padding: 86px 0 50px;
 }
 
 .promo__description {
@@ -463,34 +588,33 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50%;
+  max-width: 630px;
+  width: 100%;
 }
 
 .promo__title {
-  max-width: 570px;
   width: 100%;
-  margin: 0 0 50px;
+  margin: 0 0 32px;
   padding: 0;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 54px;
   line-height: 1.2;
   font-weight: 700;
   color: inherit;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .promo__text {
-  max-width: 555px;
   width: 100%;
-  margin: 0 0 40px;
+  margin: 0 0 35px;
   padding: 0;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
   color: inherit;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -502,14 +626,14 @@ img {
 
 .promo__item {
   position: relative;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   padding: 0 0 0 45px;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
-  letter-spacing: 0.001em;
+  letter-spacing: 0.01em;
 }
 
 .promo__item::before {
@@ -526,7 +650,7 @@ img {
 .registration {
   position: absolute;
   top: 0;
-  left: calc(50% + 96px);
+  left: 663px;
   max-width: 475px;
   width: 100%;
   padding: 65px 50px 0;
@@ -547,6 +671,7 @@ img {
   line-height: 1.2;
   font-weight: 700;
   color: #272727;
+  letter-spacing: 0.01em;
 }
 
 .registration form {

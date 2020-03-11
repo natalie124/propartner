@@ -1,7 +1,7 @@
 .registration {
   position: absolute;
   top: 0;
-  left: calc(50% + 96px);
+  left: 663px;
 
   max-width: 475px;
   width: 100%;
@@ -21,6 +21,7 @@
     padding: 0;
 
     @include font-main(36px, 1.2, 700, $font-black);
+    letter-spacing: 0.01em;
   }
 
   form {

@@ -1,0 +1,12 @@
+footer.footer
+  .container.container--big
+    ul.footer__menu
+      each item in footerMenuItems
+        li.footer__menu-item
+          a.footer__menu-link.menu-link(href="#") !{item}
+    .footer__info
+      a.footer__logo(href="#")
+        +svg("logo", 256, 26)
+      .footer__copyright
+        p © Copyright 2012-2020 <a href="#">Propartner.ru</a>
+        p Propartner.ru – торговая площадка, содержащая информацию о компаниях России, Украины, Казахстана и Беларуси: профили организаций, контактные данные и товарные предложения.

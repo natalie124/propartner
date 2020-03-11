@@ -126,7 +126,7 @@ img {
   letter-spacing: 0.01em;
   text-decoration: none;
   margin: 0;
-  padding: 17px 55px;
+  padding: 16px 54px;
   background-color: #4091d1;
   border: none;
   border-radius: 8px;
@@ -208,7 +208,7 @@ img {
 
 .input-item {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .input-item input {
@@ -244,7 +244,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.2;
@@ -268,7 +268,7 @@ img {
   line-height: 1.2;
   font-weight: 400;
   color: #272727;
-  letter-spacing: 0.001em;
+  letter-spacing: 0.01em;
   cursor: pointer;
 }
 
@@ -653,7 +653,7 @@ img {
   left: 663px;
   max-width: 475px;
   width: 100%;
-  padding: 65px 50px 0;
+  padding: 59px 50px 0;
   color: #272727;
   background-color: #ffffff;
   border-radius: 6px;
@@ -664,8 +664,8 @@ img {
 .registration__title {
   text-align: center;
   width: 100%;
-  margin: 0 0 35px;
-  padding: 0;
+  margin: 0 0 32px;
+  padding: 0 0 0 12px;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 36px;
   line-height: 1.2;
@@ -691,7 +691,7 @@ img {
 }
 
 .registration__check {
-  margin: 30px 0 30px;
+  margin: 37px 0 44px;
 }
 
 .registration__btn {
@@ -699,8 +699,8 @@ img {
 }
 
 .advantages {
-  padding-top: 165px;
-  padding-bottom: 100px;
+  padding-top: 155px;
+  padding-bottom: 84px;
   background-color: #f8f8f8;
   background-image: url("../img/content-bg-left.png"), url("../img/content-bg-right.png");
   background-repeat: no-repeat;
@@ -713,12 +713,13 @@ img {
   text-align: center;
   width: 100%;
   margin: 0 0 125px;
-  padding: 0;
+  padding: 0 0 0 60px;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 48px;
   line-height: 1.2;
   font-weight: 700;
   color: #272727;
+  letter-spacing: 0.01em;
 }
 
 .advantages__list {
@@ -753,6 +754,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 25%;
+  margin-bottom: 15px;
+  padding: 0 15px;
 }
 
 .advantages__icon {
@@ -767,6 +770,19 @@ img {
           align-items: center;
   width: 83px;
   height: 67px;
+  margin-bottom: 35px;
+}
+
+.advantages__icon--cart {
+  padding-top: 19px;
+}
+
+.advantages__icon--cup {
+  padding-top: 35px;
+}
+
+.advantages__icon--people {
+  padding-top: 36px;
 }
 
 .advantages__icon svg {
@@ -779,7 +795,7 @@ img {
   width: 100%;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 400;
   color: #272727;
   text-transform: lowercase;
@@ -793,9 +809,10 @@ img {
 }
 
 .advantages__count {
+  margin-bottom: -2px;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 700;
   color: #272727;
   text-transform: uppercase;

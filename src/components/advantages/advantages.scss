@@ -1,6 +1,6 @@
 .advantages {
-  padding-top: 165px;
-  padding-bottom: 100px;
+  padding-top: 155px;
+  padding-bottom: 84px;
 
   background-color: $bg-light;
   background-image: url("../img/content-bg-left.png"), url("../img/content-bg-right.png");
@@ -14,9 +14,10 @@
 
     width: 100%;
     margin: 0 0 125px;
-    padding: 0;
+    padding: 0 0 0 60px;
 
     @include font-main(48px, 1.2, 700, $font-black);
+    letter-spacing: 0.01em;
   }
 
   &__list {
@@ -36,7 +37,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
     width: 25%;
+    margin-bottom: 15px;
+    padding: 0 15px;
   }
 
   &__icon {
@@ -46,6 +50,19 @@
 
     width: 83px;
     height: 67px;
+    margin-bottom: 35px;
+
+    &--cart {
+      padding-top: 19px;
+    }
+
+    &--cup {
+      padding-top: 35px;
+    }
+
+    &--people {
+      padding-top: 36px;
+    }
 
     svg {
       max-width: 100%;
@@ -58,7 +75,7 @@
     max-width: 100%;
     width: 100%;
 
-    @include font-main(18px, 1.2, 400, $font-black);
+    @include font-main(18px, 1, 400, $font-black);
     text-transform: lowercase;
 
     span {
@@ -71,7 +88,9 @@
   }
 
   &__count {
-    @include font-main(30px, 1.2, 700, $font-black);
+    margin-bottom: -2px;
+
+    @include font-main(30px, 1, 700, $font-black);
     text-transform: uppercase;
   }
 }

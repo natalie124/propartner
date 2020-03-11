@@ -13,6 +13,19 @@
     border-radius: 2px;
 
     outline: none;
+    appearance: none;
+
+    &::-ms-clear {
+      display: none;
+    }
+
+    &::-ms-reveal {
+      display: none;
+    }
+
+    &:disabled {
+      background-color: #ebebeb;
+    }
 
     &:focus {
       border-color: $blue;

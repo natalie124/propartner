@@ -101,7 +101,7 @@ img {
 
 .container--big {
   max-width: 1400px;
-  padding: 0 20px;
+  padding: 0 19px;
 }
 
 @media (max-width: 1023px) {
@@ -444,6 +444,7 @@ img {
 
 .footer {
   width: 100%;
+  padding-bottom: 28px;
   color: #ffffff;
   background-color: #252525;
 }
@@ -478,7 +479,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  padding: 60px 0;
+  padding: 63px 0 60px;
   list-style: none;
 }
 
@@ -528,9 +529,9 @@ img {
 
 .footer__logo {
   display: block;
-  width: 308px;
-  height: 31px;
-  margin-bottom: 30px;
+  width: 206px;
+  height: 21px;
+  margin-bottom: 27px;
 }
 
 .footer__logo svg {
@@ -541,8 +542,8 @@ img {
 }
 
 .footer__copyright {
-  max-width: 630px;
-  margin: 0 auto 50px;
+  max-width: 685px;
+  margin: 0 auto 30px;
 }
 
 .footer__copyright p {

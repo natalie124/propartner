@@ -1,7 +1,7 @@
 .registration {
   position: absolute;
   top: 0;
-  left: 663px;
+  right: 0;
 
   max-width: 475px;
   width: 100%;
@@ -13,6 +13,21 @@
   border-radius: 6px;
   box-shadow: 0px 0px 50px 0px rgba(31, 40, 108, 0.1);
 
+  @media(max-width: $desktop) {
+    max-width: 415px;
+    padding: 39px 30px 0;
+  }
+
+  @media(max-width: $laptop) {
+    max-width: 395px;
+    padding: 29px 20px 0;
+  }
+
+  @media(max-width: $tablet) {
+    min-width: 300px;
+    width: 43%;
+  }
+
   &__title {
     text-align: center;
 
@@ -22,6 +37,18 @@
 
     @include font-main(36px, 1.2, 700, $font-black);
     letter-spacing: 0.01em;
+
+    @media(max-width: $desktop) {
+      padding-left: 0;
+    }
+
+    @media(max-width: $desktop) {
+      padding-left: 0;
+    }
+
+    @media(max-width: $tablet) {
+      font-size: 28px;
+    }
   }
 
   form {
@@ -33,6 +60,10 @@
 
   &__check {
     margin: 37px 0 44px;
+
+    @media(max-width: $tablet) {
+      margin: 27px 0 34px;
+    }
   }
 
   &__btn {

@@ -7,20 +7,8 @@
   background-color: $bg-dark;
 
   &__menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  &__menu {
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 

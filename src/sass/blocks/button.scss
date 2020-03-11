@@ -15,6 +15,11 @@
   cursor: pointer;
   outline: none;
 
+  @media(max-width: $tablet) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   &:hover {
     text-shadow: 0 -1px 1px #777777;
 

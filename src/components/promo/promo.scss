@@ -8,8 +8,15 @@
     justify-content: flex-start;
     align-items: flex-start;
 
-    max-width: 630px;
-    width: 100%;
+    width: 55%;
+
+    @media(max-width: $desktop) {
+      max-width: 540px;
+    }
+
+    @media(max-width: $tablet) {
+      max-width: 400px;
+    }
   }
 
   &__title {
@@ -20,6 +27,14 @@
     @include font-main(54px, 1.2, 700, inherit);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+    @media(max-width: $desktop) {
+      font-size: 45px;
+    }
+
+    @media(max-width: $tablet) {
+      font-size: 35px;
+    }
   }
 
   &__text {
@@ -30,6 +45,18 @@
     @include font-main(28px, 1.2, 700, inherit);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+    @media(max-width: $desktop) {
+      font-size: 26px;
+    }
+
+    @media(max-width: $laptop) {
+      font-size: 24px;
+    }
+
+    @media(max-width: $tablet) {
+      font-size: 18px;
+    }
   }
 
   &__list {
@@ -48,6 +75,12 @@
     @include font-main(18px, 20px, 400, $white);
     letter-spacing: 0.01em;
 
+    @media(max-width: $tablet) {
+      padding-left: 30px;
+
+      font-size: 16px;
+    }
+
     &::before {
       position: absolute;
       top: 0;
@@ -60,6 +93,15 @@
       border-radius: 4px;
 
       content: "";
+
+      @media(max-width: $tablet) {
+        top: 5px;
+
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+      }
     }
   }
 }

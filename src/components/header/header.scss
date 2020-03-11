@@ -7,7 +7,7 @@
   background-image: url("../img/header-bg-left.png"), url("../img/header-bg-right.png");
   background-repeat: no-repeat;
   background-position: top left, top right;
-  background-size: 50%;
+  background-size: auto;
 
   &__nav {
     display: flex;
@@ -38,7 +38,9 @@
     }
 
     &:active {
-      opacity: 0.3;
+      svg {
+        fill: $orange;
+      }
     }
   }
 

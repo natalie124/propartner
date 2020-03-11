@@ -1,0 +1,65 @@
+.promo {
+  position: relative;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 50%;
+  }
+
+  &__title {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 0;
+
+    @include font-main(54px, 1.2, 700, inherit);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 555px;
+    width: 100%;
+    margin: 0 0 40px;
+    padding: 0;
+
+    @include font-main(28px, 1.2, 700, inherit);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 0 0 45px;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+
+    margin: 0 0 25px;
+    padding: 0 0 0 45px;
+
+    @include font-main(18px, 20px, 400, $white);
+    letter-spacing: 0.001em;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 16px;
+      height: 16px;
+
+      background-color: $orange;
+      border-radius: 4px;
+
+      content: "";
+    }
+  }
+}

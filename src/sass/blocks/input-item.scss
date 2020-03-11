@@ -1,0 +1,153 @@
+.input-item {
+  width: 100%;
+  margin-bottom: 15px;
+
+  input {
+    width: 100%;
+    padding: 15px;
+
+    font: inherit;
+
+    background-color: $white;
+    border: 1px solid $border-grey;
+    border-radius: 2px;
+
+    outline: none;
+
+    &:focus {
+      border-color: $blue;
+    }
+  }
+
+  label {
+    display: inline-block;
+    vertical-align: baseline;
+
+    width: 100%;
+    margin-bottom: 15px;
+
+    @include font-main(16px, 1.2, 400, $font-grey);
+  }
+}
+
+.input-check {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 15px;
+
+  label {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: baseline;
+    padding-left: 32px;
+
+    @include font-main(14px, 1.2, 400, $font-black);
+    letter-spacing: 0.001em;
+
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 16px;
+      height: 16px;
+
+      background-color: $white;
+      border: 2px solid $border-grey;
+      border-radius: 1px;
+
+      content: "";
+      cursor: pointer;
+    }
+
+    &::after {
+      position: absolute;
+      left: 4px;
+      top: 2px;
+
+      width: 8.5px;
+      height: 7px;
+
+      background-color: transparent;
+      border-right: 2px solid transparent;
+      border-top: 2px solid transparent;
+
+      transform: rotate(135deg);
+
+      content: "";
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $blue;
+      }
+    }
+
+    a {
+      color: $blue;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &:active {
+        color: $orange;
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: baseline;
+
+      width: 100%;
+    }
+  }
+
+  input {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+
+    &:checked+label {
+      &::before {
+        background-color: $blue;
+        border-color: $blue;
+      }
+
+      &::after {
+         border-color: $white;
+      }
+    }
+
+    &:disabled+label {
+      color: #ebebeb;
+
+      cursor: default;
+
+      &:hover,
+      &:focus {
+        color: #ebebeb;
+      }
+
+      &::before {
+        background-color: #ebebeb;
+        border-color: $border-grey;
+
+        cursor: default;
+      }
+    }
+  }
+}

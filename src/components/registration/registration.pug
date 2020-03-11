@@ -9,9 +9,10 @@ section.registration
       input(type="password" id="password" required)
     .input-item
       label(for="phone") Телефон
-      input(type="text" id="phone")
-    .input-check
+      input(type="tel" id="phone")
+    .registration__check.input-check
       input(type="checkbox" id="consent" name="consent" tabindex="-1" required)
-      label(for="consent") Я согласен с пользовательским соглашением и публичной офертой
-
-    button.button(type="submit") Зарегистрироваться
+      label(for="consent")
+        span Я согласен с <a href="#">Соглашением</a>
+        span и <a href="#">политикой конфиденциальности</a>
+    button.registration__btn.button(type="submit") Зарегистрироваться

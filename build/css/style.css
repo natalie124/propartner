@@ -557,7 +557,7 @@ img {
 
 .footer__menu {
   position: relative;
-  left: -30px;
+  left: -29px;
   width: calc(100% + 35px);
   margin: 0;
   padding: 63px 0 60px;
@@ -575,7 +575,7 @@ img {
 .footer__menu-item {
   position: relative;
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 29px;
   margin-bottom: 10px;
   font-family: "GTEestiProText", "Arial", sans-serif;
   font-size: 14px;

@@ -20,7 +20,7 @@
 
   &__menu {
     position: relative;
-    left: -30px;
+    left: -29px;
 
     width: calc(100% + 35px);
 
@@ -41,7 +41,7 @@
 
     display: inline-block;
 
-    padding-left: 30px;
+    padding-left: 29px;
     margin-bottom: 10px;
 
     @include font-main(14px, 1, 700, $white);

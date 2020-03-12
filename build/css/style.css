@@ -112,6 +112,10 @@ img {
   padding: 0 19px;
 }
 
+.sprite {
+  display: none;
+}
+
 .button {
   position: relative;
   font-family: "GTEestiProText", "Arial", sans-serif;

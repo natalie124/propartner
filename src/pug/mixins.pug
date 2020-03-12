@@ -1,6 +1,6 @@
 mixin svg( name, width, height )
   svg( width=("" + width) height=("" + height) aria-hidden="true" )
-    use( xlink:href=("img/sprite.svg#" + name) )
+    use( xlink:href=("#" + name) )
 
 mixin img-svg( name, width, height, alt )
   img( src="img/" + name + ".svg" width=("" + width) height=("" + height) alt="" + alt )

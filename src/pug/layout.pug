@@ -16,10 +16,11 @@ html( lang="ru" )
     link( rel="stylesheet" href="css/style.min.css" )
   body
 
+    .sprite(style="display:none")
+      include ../../build/img/sprite.svg
+
     include ../components/header/header
 
     block content
 
     include ../components/footer/footer
-
-    script( src="js/vendor.min.js" )

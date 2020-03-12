@@ -93,6 +93,7 @@
 
   &__copyright {
     max-width: 685px;
+    width: 100%;
     margin: 0 auto 30px;
 
     @media (max-width: $mobile) {
@@ -102,6 +103,7 @@
     p {
       text-align: center;
 
+      width: 100%;
       margin: 0;
       padding: 0;
 

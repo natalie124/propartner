@@ -12,6 +12,13 @@
     padding-top: 120px;
   }
 
+  @media(max-width: $mobile) {
+    padding-top: 300px;
+    padding-bottom: 24px;
+
+    background-image: none;
+  }
+
   &__title {
     display: inline-block;
     text-align: center;
@@ -28,6 +35,14 @@
       padding-left: 0;
 
       font-size: 35px;
+    }
+
+    @media(max-width: $mobile) {
+      margin-bottom: 35px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      font-size: 30px;
     }
   }
 
@@ -56,6 +71,10 @@
     @media(max-width: $tablet) {
       padding: 0 10px;
     }
+
+    @media(max-width: $mobile) {
+      width: 50%;
+    }
   }
 
   &__icon {
@@ -67,20 +86,58 @@
     height: 67px;
     margin-bottom: 35px;
 
+    @media (max-width: $mobile) {
+      margin-bottom: 34px;
+    }
+
     &--cart {
       padding-top: 19px;
+
+      @media(max-width: $mobile) {
+        svg {
+          width: 52px;
+          padding-top: 0;
+        }
+      }
+    }
+
+    &--portfolio {
+      @media(max-width: $mobile) {
+        padding-top: 5px;
+
+        svg {
+          width: 47px;
+        }
+      }
     }
 
     &--cup {
       padding-top: 35px;
+
+      @media(max-width: $mobile) {
+        padding-top: 29px;
+
+        svg {
+          width: 49px;
+        }
+      }
     }
 
     &--people {
       padding-top: 36px;
+
+      @media(max-width: $mobile) {
+        padding-top: 30px;
+
+        svg {
+          width: 65px;
+        }
+      }
     }
 
     svg {
       max-width: 100%;
+      height: auto;
 
       fill: $blue;
     }
@@ -97,6 +154,13 @@
       margin-top: 0;
 
       font-size: 14px;
+    }
+
+    @media(max-width: $mobile) {
+      margin-bottom: 4px;
+
+      font-size: 16px;
+      line-height: 1.2;
     }
 
     span {
@@ -116,6 +180,10 @@
 
     @media(max-width: $tablet) {
       font-size: 24px;
+    }
+
+    @media(max-width: $mobile) {
+      margin-bottom: 5px;
     }
   }
 }

@@ -13,7 +13,7 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper container">
+    <div class="container">
       <nav class="header__nav"><a class="header__logo" href="#" title="Логотип Propartner"><svg width="308" height="31" aria-hidden="true">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg></a><a class="header__location menu-link" href="#"><svg width="14" height="18" aria-hidden="true">
@@ -34,15 +34,17 @@
             <li class="promo__item">Находить новых клиентов</li>
           </ul>
         </div>
-        <section class="registration">
-          <h2 class="registration__title">Зарегистрироваться</h2>
-          <form action="#" method="post">
-            <div class="input-item"><label for="email">e-mail<span>*</span></label><input type="email" id="email" required></div>
-            <div class="input-item"><label for="password">Пароль<span>*</span></label><input type="password" id="password" required></div>
-            <div class="input-item"><label for="phone">Телефон</label><input type="tel" id="phone"></div>
-            <div class="registration__check input-check"><input type="checkbox" id="consent" name="consent" tabindex="-1" required><label for="consent"><span>Я согласен с <a href="#">Соглашением</a></span><span>и <a href="#">политикой конфиденциальности</a></span></label></div><button class="registration__btn button" type="submit">Зарегистрироваться</button>
-          </form>
-        </section>
+        <div class="promo__registration">
+          <section class="registration">
+            <h2 class="registration__title">Зарегистрироваться</h2>
+            <form action="#" method="post">
+              <div class="input-item"><label for="email">e-mail<span>*</span></label><input type="email" id="email" required></div>
+              <div class="input-item"><label for="password">Пароль<span>*</span></label><input type="password" id="password" required></div>
+              <div class="input-item"><label for="phone">Телефон</label><input type="tel" id="phone"></div>
+              <div class="registration__check input-check"><input type="checkbox" id="consent" name="consent" tabindex="-1" required><label for="consent"><span>Я согласен с <a href="#">Соглашением</a></span><span>и <a href="#">политикой конфиденциальности</a></span></label></div><button class="registration__btn button" type="submit">Зарегистрироваться</button>
+            </form>
+          </section>
+        </div>
       </section>
     </div>
   </header>
@@ -57,7 +59,7 @@
           <p class="advantages__text"><span class="advantages__count">11 190 000</span><span>товаров</span></p>
         </li>
         <li class="advantages__item">
-          <div class="advantages__icon"><svg width="60" height="62" aria-hidden="true">
+          <div class="advantages__icon advantages__icon--portfolio"><svg width="60" height="62" aria-hidden="true">
               <use xlink:href="img/sprite.svg#portfolio"></use>
             </svg></div>
           <p class="advantages__text"><span class="advantages__count">56 000</span><span>компаний</span></p>
@@ -78,18 +80,20 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="container container--big">
-      <ul class="footer__menu">
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Пользовательское соглашение</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Продвижение</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">О компании</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Политика конфиденциальности</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Условия использования</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Обратная связь</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Контакты</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Доставка и оплата</a></li>
-        <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Корзина</a></li>
-      </ul>
+    <div class="footer__container container container--big">
+      <div class="footer__menu-wrapper">
+        <ul class="footer__menu">
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Пользовательское соглашение</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Продвижение</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">О компании</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Политика конфиденциальности</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Условия использования</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Обратная связь</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Контакты</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Доставка и оплата</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link menu-link" href="#">Корзина</a></li>
+        </ul>
+      </div>
       <div class="footer__info"><a class="footer__logo" href="#" title="Логотип Propartner"><svg width="206" height="21" aria-hidden="true">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg></a>

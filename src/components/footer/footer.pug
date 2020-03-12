@@ -1,9 +1,10 @@
 footer.footer
-  .container.container--big
-    ul.footer__menu
-      each item in footerMenuItems
-        li.footer__menu-item
-          a.footer__menu-link.menu-link(href="#") !{item}
+  .footer__container.container.container--big
+    .footer__menu-wrapper
+      ul.footer__menu
+        each item in footerMenuItems
+          li.footer__menu-item
+            a.footer__menu-link.menu-link(href="#") !{item}
     .footer__info
       a.footer__logo(href="#" title="Логотип Propartner")
         +svg("logo", 206, 21)

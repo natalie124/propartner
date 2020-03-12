@@ -1,6 +1,12 @@
 .promo {
   position: relative;
-  padding: 86px 0 50px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding: 0 0 50px;
 
   &__description {
     display: flex;
@@ -8,18 +14,17 @@
     justify-content: flex-start;
     align-items: flex-start;
 
-    width: 55%;
+    width: 58%;
+    padding-top: 86px;
 
-    @media(max-width: $desktop) {
-      max-width: 540px;
-    }
-
-    @media(max-width: $tablet) {
-      max-width: 400px;
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding: 25px 13px 0 18px;
     }
   }
 
   &__title {
+    max-width: 630px;
     width: 100%;
     margin: 0 0 32px;
     padding: 0;
@@ -29,15 +34,27 @@
     text-transform: uppercase;
 
     @media(max-width: $desktop) {
+      max-width: 540px;
+
       font-size: 45px;
     }
 
     @media(max-width: $tablet) {
+      max-width: 400px;
+
       font-size: 35px;
+    }
+
+    @media (max-width: $mobile) {
+      max-whidth: 270px;
+      margin-bottom: 34px;
+
+      font-size: 24px;
     }
   }
 
   &__text {
+    max-width: 630px;
     width: 100%;
     margin: 0 0 35px;
     padding: 0;
@@ -47,6 +64,8 @@
     text-transform: uppercase;
 
     @media(max-width: $desktop) {
+      max-width: 540px;
+
       font-size: 26px;
     }
 
@@ -55,15 +74,38 @@
     }
 
     @media(max-width: $tablet) {
+      max-width: 400px;
+
       font-size: 18px;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 270px;
+      margin-bottom: 30px;
+
+      font-size: 13px;
     }
   }
 
   &__list {
+    max-width: 630px;
+    width: 100%;
     margin: 0 0 45px;
     padding: 0;
 
     list-style: none;
+
+    @media(max-width: $desktop) {
+      max-width: 540px;
+    }
+
+    @media(max-width: $tablet) {
+      max-width: 400px;
+    }
+
+    @media(max-width: $mobile) {
+      margin-bottom: 21px;
+    }
   }
 
   &__item {
@@ -79,6 +121,13 @@
       padding-left: 30px;
 
       font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 9px;
+      padding-left: 12px;
+
+      font-size: 14px;
     }
 
     &::before {
@@ -102,6 +151,22 @@
 
         border-radius: 50%;
       }
+
+      @media (max-width: $mobile) {
+        width: 7.3px;
+        height: 7.3px;
+      }
+    }
+  }
+
+  &__registration {
+    position: relative;
+
+    width: 42%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding-top: 239px;
     }
   }
 }

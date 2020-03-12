@@ -10,6 +10,9 @@
 
   @media(max-width: $tablet) {
     padding-top: 120px;
+
+    background-image: url("../img/content-bg-right.png");
+    background-position: top right;
   }
 
   @media(max-width: $mobile) {

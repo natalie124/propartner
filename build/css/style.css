@@ -381,10 +381,15 @@ img {
   background-size: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .header {
     background-image: url("../img/header-bg-right.png");
     background-position: top right;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
     background-size: cover;
   }
 }
@@ -734,7 +739,7 @@ img {
 
 @media (max-width: 767px) {
   .promo__title {
-    max-whidth: 270px;
+    max-width: 270px;
     margin-bottom: 34px;
     font-size: 24px;
   }
@@ -1003,6 +1008,8 @@ img {
 @media (max-width: 991px) {
   .advantages {
     padding-top: 120px;
+    background-image: url("../img/content-bg-right.png");
+    background-position: top right;
   }
 }
 

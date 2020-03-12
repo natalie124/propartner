@@ -9,9 +9,12 @@
   background-position: top left, top right;
   background-size: auto;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     background-image: url("../img/header-bg-right.png");
     background-position: top right;
+  }
+
+  @media (max-width: $mobile) {
     background-size: cover;
   }
 
